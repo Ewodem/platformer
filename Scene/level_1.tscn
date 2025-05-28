@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c52bjrqif4gsg" path="res://Scene/coin.tscn" id="4_bhfej"]
 [ext_resource type="AudioStream" uid="uid://dutq3xtq8pqaf" path="res://Assets/SFX/Recording.wav" id="5_1c0rb"]
 [ext_resource type="PackedScene" uid="uid://diip1qabmyvkb" path="res://Scene/dumpster.tscn" id="6_f226f"]
-[ext_resource type="Script" path="res://Scene/label_2.gd" id="7_nx118"]
+[ext_resource type="Script" path="res://Script/label_2.gd" id="7_nx118"]
 [ext_resource type="PackedScene" uid="uid://bmq70n1hd7sla" path="res://Scene/man_hole_cover.tscn" id="8_jjbws"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_asnct"]
