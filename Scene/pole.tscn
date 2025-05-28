@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cokqipqimubmc"]
+
+[ext_resource type="ArrayMesh" uid="uid://jx06j81g6djb" path="res://Assets/Models/polelight.res" id="1_kcpvw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bvdwp"]
+height = 12.8142
+radius = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hdpre"]
+size = Vector3(9, 1, 1.79402)
+
+[node name="Pole" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = ExtResource("1_kcpvw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.81688, 0)
+shape = SubResource("CylinderShape3D_bvdwp")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.0221522)
+shape = SubResource("BoxShape3D_hdpre")

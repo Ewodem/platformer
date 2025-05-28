@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://cobmmqrbg7vfo"]
+
+[ext_resource type="Script" path="res://Scene/settings.gd" id="1_bru44"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bru44")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 500.0
+offset_right = 875.0
+offset_bottom = 550.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Back to menu"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 100.0
+offset_right = 325.0
+offset_bottom = 140.0
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer2"]
+layout_mode = 2
+action_mode = 0
+text = "Le funny button:"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="VBoxContainer2/CheckButton" to="." method="_on_check_button_toggled"]

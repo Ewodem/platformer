@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://cdffoonny3jpc"]
+
+[ext_resource type="Texture2D" uid="uid://ddhmtdbhbvyr2" path="res://CityMix1_Assets/CityMix1_Textures/CityMix_1_AlbedoTransparency.png" id="1_gdo4a"]
+[ext_resource type="Texture2D" uid="uid://7si0wijolsy1" path="res://CityMix1_Assets/CityMix1_Textures/CityMix_1_Emission.png" id="2_lk471"]
+[ext_resource type="Texture2D" uid="uid://csubx60y2qfos" path="res://CityMix1_Assets/CityMix1_Textures/CityMix_1_Metallic.png" id="3_gfe4v"]
+[ext_resource type="Texture2D" uid="uid://djwwdvb2sdsjb" path="res://CityMix1_Assets/CityMix1_Textures/CityMix_1_Normal.png" id="4_dn0ri"]
+
+[resource]
+resource_name = "GeneralAssets_CityMix_1"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_gdo4a")
+metallic = 1.0
+metallic_texture = ExtResource("3_gfe4v")
+roughness = 0.2
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+emission_texture = ExtResource("2_lk471")
+normal_enabled = true
+normal_texture = ExtResource("4_dn0ri")
